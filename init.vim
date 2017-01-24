@@ -321,6 +321,8 @@ let g:syntastic_html_tidy_exec = '/usr/bin/tidy'
 let g:syntastic_javascript_checkers = ['standard']
 let g:elm_syntastic_show_warnings = 1
 
+:nnoremap ,,S :SyntasticToggleMode<CR>
+
 "" Auto-format js files to fit standard linter
 "autocmd bufwritepost *.js silent !standard % --format
 
@@ -361,8 +363,13 @@ let g:elm_format_autosave = 1
 :nnoremap ,,m :ElmMakeMain<CR>
 :nnoremap ,,t :ElmTest<CR>
 
-" Compile 'Main.elm' on save
-:au BufWritePost *.elm ElmMake
+let g:elm_jump_to_error = 0
+let g:elm_make_output_file = "elm.js"
+let g:elm_make_show_warnings = 1
+let g:elm_syntastic_show_warnings = 1
+let g:elm_browser_command = ""
+let g:elm_detailed_complete = 1
+let g:elm_format_autosave = 1
 
 " --------------- VIM-PLUG ---------------
 call plug#begin()
