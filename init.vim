@@ -1,13 +1,6 @@
-" .vimrc
-" See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
-
-" For multi-byte character support (CJK support, for example): "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
-
 "" encoding is utf 8
 set encoding=utf-8
 set fileencoding=utf-8
-"
-" ---------- OLD STUFF -------------
 
 "" Capitals going too fast problem's OVER !
 :command WA wa
@@ -106,7 +99,7 @@ au FocusGained,BufEnter * :silent! !
 " enable matchit plugin which ships with vim and greatly enhances '%'
 runtime macros/matchit.vim
 
-" by default, in insert mode backspace won't delete over line breaks, or 
+" by default, in insert mode backspace won't delete over line breaks, o 
 " automatically-inserted indentation, let's change that
 set backspace=indent,eol,start
 
@@ -122,10 +115,8 @@ set lazyredraw
 
 
 " ---------------------- CUSTOMIZATION ----------------------
-"  The following are some extra mappings/configs to enhance my personal
-"  VIM experience
 
-" windows like clipboard
+" ------------- COPY / PASTE -----------
 " yank to and paste from the clipboard without prepending "* to commands
 let &clipboard = has('unnamedplus') ? 'unnamedplus' : 'unnamed'
 " map c-x and c-v to work as they do in windows, only in insert mode
@@ -134,7 +125,8 @@ vm <c-c> "+y
 cno <c-v> <c-r>+
 exe 'ino <script> <C-V>' paste#paste_cmd['i']
 
-" GUI stuff
+
+" ------------ GUI SETTINGS ------------
 if has("gui_running")
     "set guioptions-=m  " remove menu bar
     set guioptions-=T  " remove toolbar
@@ -146,20 +138,25 @@ if has("gui_running")
     set lines=999 columns=999
 end
 
-" remove the .ext~ files, but not the swapfiles
+"
+" -------- REMOVE TEMP FILES ------------
 set nobackup
 set writebackup
 set noswapfile
 
+"
+" ---------- NEW FILE TYPES -------------
 " On file types...
 "   .md files are markdown files
 autocmd BufNewFile,BufRead *.md setlocal ft=markdown
+autocmd BufNewFile,BufRead *.elm setlocal ft=elm
+
 
 " make a mark for column 80
 set colorcolumn=80
 
 
-"---------- MY OLD STUFF ----------
+"---------- THEME ----------
 
 " Color
 set background=dark
@@ -186,8 +183,6 @@ vmap <S-Tab> <gv
 
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
 :nnoremap <Leader>S :%s/\<<C-r><C-w>\>//g<Left><Left>
-
-" console.log the line (see last lines, it messes with the syntax highlighting otherwise !)
 
 "" --- WINDOW-BUFFER-TAB controls ---
 
@@ -346,31 +341,6 @@ if exists(':tnoremap')
   tnoremap <leader>e <C-\><C-n> 
 endif
 
-" ------------- SCREW_UP :P --------------
-" console.log the line (see last lines, it messes with the syntax highlighting otherwise !)
-:map ,x <ESC><S-i>', <ESC><S-a>)<ESC><S-i>console.log('
-" insert a console.log on a new line before
-:nmap ,X <S-o>')<ESC><S-i>console.log('
-
-
-" --------------- ELM ---------------
-let g:elm_format_autosave = 1
-:nnoremap ,,r :ElmRepl<CR>
-:nnoremap ,,d :ElmShowDocs<CR>
-:nnoremap ,,w :ElmBrowseDocs<CR>
-:nnoremap ,,e :ElmErrorDetail<CR>
-:nnoremap ,,b :ElmMake<CR>
-:nnoremap ,,m :ElmMakeMain<CR>
-:nnoremap ,,t :ElmTest<CR>
-
-let g:elm_jump_to_error = 0
-let g:elm_make_output_file = "elm.js"
-let g:elm_make_show_warnings = 1
-let g:elm_syntastic_show_warnings = 1
-let g:elm_browser_command = ""
-let g:elm_detailed_complete = 1
-let g:elm_format_autosave = 1
-
 " --------------- VIM-PLUG ---------------
 call plug#begin()
 Plug 'vim-airline/vim-airline'
@@ -386,9 +356,23 @@ Plug 'mxw/vim-jsx'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bkad/CamelCaseMotion'
 Plug 'elmcast/elm-vim'
+Plug 'nvie/vim-flake8' " python pep8 + syntax checker
+Plug 'Vimjas/vim-python-pep8-indent'
 " Plug 'lambdatoast/elm.vim'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'majutsushi/tagbar'
 " Plug 'ternjs/tern_for_vim'
 " Plug 'ramitos/jsctags'
+
+Plug 'bronson/vim-trailing-whitespace'
+
+" Haskell
+Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
+Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
+Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
+
 call plug#end()
