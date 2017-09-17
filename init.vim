@@ -6,6 +6,7 @@ source $HOME/.config/nvim/config/filetype.vimrc
 source $HOME/.config/nvim/config/general.vimrc
 source $HOME/.config/nvim/config/gui.vimrc
 source $HOME/.config/nvim/config/indent.vimrc
+source $HOME/.config/nvim/config/linting.vimrc
 source $HOME/.config/nvim/config/mapping.vimrc
 source $HOME/.config/nvim/config/plugins.vimrc
 source $HOME/.config/nvim/config/search.vimrc
@@ -28,14 +29,13 @@ Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bkad/CamelCaseMotion'
 " Plug 'lambdatoast/elm.vim'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'majutsushi/tagbar'
-" Plug 'ternjs/tern_for_vim'
-" Plug 'ramitos/jsctags'
 
 Plug 'bronson/vim-trailing-whitespace'
 
@@ -64,8 +64,7 @@ Plug 'skammer/vim-css-color'
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
-
-" NyaoVim (GUI)
-Plug 'rhysd/nyaovim-markdown-preview'
+" Plug 'ternjs/tern_for_vim'
+" Plug 'ramitos/jsctags'
 
 call plug#end()

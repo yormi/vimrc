@@ -1,4 +1,4 @@
-g:markdown_preview_auto=1
+let g:markdown_preview_auto=1
 
 " ------------ GVIM ------------
 if has("gui_running")
