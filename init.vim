@@ -26,6 +26,7 @@ endif
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'rking/ag.vim'
+Plug 'brooth/far.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'scrooloose/nerdtree'
