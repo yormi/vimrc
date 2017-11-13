@@ -30,13 +30,9 @@ Plug 'brooth/far.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'scrooloose/nerdtree'
-" Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bkad/CamelCaseMotion'
-" Plug 'lambdatoast/elm.vim'
-" Plug 'Valloric/YouCompleteMe'
-" Plug 'majutsushi/tagbar'
 
 Plug 'bronson/vim-trailing-whitespace'
 
@@ -65,7 +61,5 @@ Plug 'skammer/vim-css-color'
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
-" Plug 'ternjs/tern_for_vim'
-" Plug 'ramitos/jsctags'
 
 call plug#end()

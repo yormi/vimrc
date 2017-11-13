@@ -28,15 +28,8 @@ hi ghcmodType ctermbg = darkgrey
 let g:ghcmod_type_highlight = 'ghcmodType'
 
 
-" Check errors and lint when saving
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
-
-" ------------ SYNTASTIC ---------
-" already done by GhcMod
-let g:syntastic_mode_map = {
-    \ "mode": "active",
-    \ "passive_filetypes": ["haskell"]
-    \}
+" ------------ ALE ---------
+let g:ale_linters.haskell = ['stack-ghc-mod', 'hlint']
 
 
 " ------------ HOOGLE -------------
