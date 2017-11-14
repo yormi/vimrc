@@ -41,6 +41,10 @@ let g:ctrlp_custom_ignore = {
 " control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode = 'r'
 
+" Will mean CtrlP will now root itself a directory containing a .ctrlp file
+" rather than continuing up the stack to find your .git directory.
+let g:ctrlp_root_markers = ['.ctrlp']
+
 nmap <C-b> :CtrlPBuffer<cr>
 " Most Recently Used File List
 nmap <C-p> :CtrlPMRU<cr>

@@ -28,7 +28,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'rking/ag.vim'
 Plug 'brooth/far.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline-themes'
@@ -57,9 +56,9 @@ Plug 'nvie/vim-flake8' " python pep8 + syntax checker
 Plug 'Vimjas/vim-python-pep8-indent'
 
 " Javascript
-Plug 'skammer/vim-css-color'
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 call plug#end()
