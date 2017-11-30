@@ -50,6 +50,7 @@ Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
+Plug 'alx741/vim-hindent', { 'for': 'haskell' }
 
 " Python
 Plug 'nvie/vim-flake8' " python pep8 + syntax checker
