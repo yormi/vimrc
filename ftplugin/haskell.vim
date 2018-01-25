@@ -1,5 +1,7 @@
-set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
-set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
+set tabstop=2       " Number of spaces that a <Tab> in the file counts for.
+set shiftwidth=2    " Number of spaces to use for each step of (auto)indent.
+
+let g:hindent_on_save = 0
 
 let g:haskell_indent_if = 3
 let g:haskell_indent_case = 2

@@ -12,6 +12,7 @@ source $HOME/.config/nvim/config/plugins.vimrc
 source $HOME/.config/nvim/config/search.vimrc
 source $HOME/.config/nvim/config/syntax.vimrc
 source $HOME/.config/nvim/config/temp-file.vimrc
+source $HOME/.config/nvim/config/terminal.vimrc
 source $HOME/.config/nvim/config/theme.vimrc
 source $HOME/.config/nvim/config/visual-aid.vimrc
 
@@ -61,5 +62,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
+
+" gonvim
+Plug 'equalsraf/neovim-gui-shim'
 
 call plug#end()

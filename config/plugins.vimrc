@@ -9,7 +9,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " ------------ NERDTree ------------------
 :nmap <leader>n :NERDTreeToggle<CR>
-:nmap <leader>m :NERDTreeMirror<CR>
+:nmap <leader>m :NERDTreeFocus<CR>
+:nmap <leader>M :NERDTreeMirror<CR>
 
 
 " --------- camelCaseMotion -------------
