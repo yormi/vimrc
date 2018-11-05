@@ -31,9 +31,9 @@ set hlsearch        " When there is a previous search pattern, highlight all
 set incsearch       " While typing a search command, show immediately where the
                     " so far typed pattern matches.
 
-set ignorecase      " Ignore case in search patterns.
+" set ignorecase      " Ignore case in search patterns.
 
-set smartcase       " Override the 'ignorecase' option if the search pattern
+" set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
 
 set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
@@ -48,7 +48,7 @@ set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
 set textwidth=100    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
 
-set formatoptions=c,q,r,t " This is a sequence of letters which describes how
+set formatoptions=q,r " This is a sequence of letters which describes how
                     " automatic formatting is to be done.
                     "
                     " letter    meaning when present in 'formatoptions'

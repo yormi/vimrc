@@ -8,6 +8,7 @@ let mapleader = ","
 :command! Wq wq
 :command! W w
 :command! Q q
+:command! WW w !sudo tee > /dev/null %
 
 
 " ESC on CTRL-j
@@ -20,7 +21,13 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " ---------- SUBSTITUTE WORD -------------
+" replace word under cursor for the whole line without confirmation
+:nnoremap <Leader>d :s/\<<C-r><C-w>\>//g<Left><Left>
+" replace the entered for the whole selection
+:vnoremap <Leader>d :s/\%V
+" replace word under cursor for the whole file
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+" replace word under cursor for the whole file without confirmation
 :nnoremap <Leader>S :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 
@@ -41,7 +48,7 @@ vmap <S-Tab> <gv
 :nmap <leader>cp :cp<CR>
 
 
-" allow buffer to be hiden even if modified
+" allow buffer to be hidden even if modified
 "set hidden
 
 

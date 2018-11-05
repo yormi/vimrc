@@ -27,4 +27,5 @@ let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " ----------- YOU_COMPLETE_ME -----------
-let g:ycm_autoclose_preview_window_after_completion=1
+"""" Not used anymore !? Test
+"let g:ycm_autoclose_preview_window_after_completion=1

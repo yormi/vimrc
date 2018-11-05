@@ -1,5 +1,5 @@
 " -------- REMOVE TEMP FILES ------------
-set backupcopy=yes " Test for file watchers...
+set backupcopy=yes
 set nobackup
 set writebackup
 set noswapfile
