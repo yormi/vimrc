@@ -11,8 +11,10 @@ let mapleader = ","
 :command! WW w !sudo tee > /dev/null %
 
 
-" ESC on CTRL-j
-:imap <C-j> <ESC>
+"" ESC on CTRL-j
+":imap <C-j> <ESC>
+":imap éé <ESC>
+":imap jj <ESC>
 
 
 " allow Tab and Shift+Tab to
@@ -65,3 +67,6 @@ noremap <leader>w :bn<CR>
 " This replicates the idea of closing a tab
 nmap <leader>r :bp <BAR> bd #<CR>
 nmap <silent> <leader>R :NERDTreeClose<bar>bufdo bd<CR>
+
+
+nmap <leader>j :ALEDetail<CR>

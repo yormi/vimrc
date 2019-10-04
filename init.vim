@@ -36,8 +36,8 @@ Plug 'brooth/far.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 
-let g:ale_completion_enabled = 1
 Plug 'w0rp/ale'
+let g:ale_completion_enabled = 1
 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bkad/CamelCaseMotion'
@@ -48,7 +48,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Elm
 " Plug 'pbogut/deoplete-elm'
-Plug 'elmcast/elm-vim'
+Plug 'Zaptic/elm-vim'
 
 " Haskell
 Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
