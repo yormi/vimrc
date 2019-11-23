@@ -25,7 +25,7 @@ endif
 " ---------------- NEOVIM ---------------
 " Exit terminal mode
 if exists(':tnoremap')
-  tnoremap <leader>e <C-\><C-n> 
+  tnoremap <leader>e <C-\><C-n>
 endif
 
 " --------------- VIM-PLUG ---------------
@@ -35,6 +35,9 @@ Plug 'rking/ag.vim'
 Plug 'brooth/far.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+
+" Colorscheme
+Plug 'morhetz/gruvbox'
 
 Plug 'w0rp/ale'
 let g:ale_completion_enabled = 1
@@ -59,6 +62,7 @@ Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'alx741/vim-hindent', { 'for': 'haskell' }
+Plug 'hspec/hspec.vim', { 'for': 'haskell' }
 
 " Python
 Plug 'nvie/vim-flake8' " python pep8 + syntax checker
