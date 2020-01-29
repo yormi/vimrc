@@ -22,6 +22,7 @@ let mapleader = ","
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+
 " ---------- SUBSTITUTE WORD -------------
 " replace word under cursor for the whole line without confirmation
 :nnoremap <Leader>d :s/\<<C-r><C-w>\>//g<Left><Left>

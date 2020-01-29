@@ -86,7 +86,7 @@ au FocusGained,BufEnter * :silent! !
 " enable matchit plugin which ships with vim and greatly enhances '%'
 runtime macros/matchit.vim
 
-" by default, in insert mode backspace won't delete over line breaks, o 
+" by default, in insert mode backspace won't delete over line breaks, o
 " automatically-inserted indentation, let's change that
 set backspace=indent,eol,start
 

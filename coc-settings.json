@@ -1,0 +1,35 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": ["elm", "scala"],
+    "diagnostic.maxWindowHeight":12,
+
+    "languageserver": {
+        "elmLS": {
+            "command": "elm-language-server",
+            "filetypes": ["elm"],
+            "rootPatterns": ["elm.json"],
+            "initializationOptions": {
+                "elmAnalyseTrigger": "change"
+            }
+        },
+        "haskell": {
+            "command": "hie-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": [
+                "stack.yaml",
+                "cabal.config",
+                "package.yaml"
+            ],
+            "filetypes": [
+                "hs",
+                "lhs",
+                "haskell"
+            ],
+            "initializationOptions": {
+                "languageServerHaskell": {
+                    "hlintOn": true
+                }
+            }
+        }
+    }
+    , "metals.javaHome": "/usr/lib/jvm/default"
+}

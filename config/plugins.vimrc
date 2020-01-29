@@ -46,8 +46,16 @@ let g:ctrlp_working_path_mode = 'r'
 " rather than continuing up the stack to find your .git directory.
 let g:ctrlp_root_markers = ['.ctrlp']
 
-nmap <C-b> :CtrlPBuffer<cr>
-" Most Recently Used File List
-nmap <C-p> :CtrlPMRU<cr>
+" nmap <C-b> :CtrlPBuffer<cr>
+" " Most Recently Used File List
+" nmap <C-p> :CtrlPMRU<cr>
 
 
+
+" ------- Vim-Clap ------
+
+nmap <C-p> :Clap gfiles<cr>
+nmap <C-b> :Clap buffers<cr>
+nmap <C-f> :Clap blines<cr>
+nmap <C-g> :Clap grep<cr>
+nmap <C-h> :Clap history<cr>

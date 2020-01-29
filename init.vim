@@ -31,29 +31,40 @@ endif
 " --------------- VIM-PLUG ---------------
 call plug#begin()
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Search & Navigate
 Plug 'rking/ag.vim'
 Plug 'brooth/far.vim'
-Plug 'kien/ctrlp.vim'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 Plug 'scrooloose/nerdtree'
+" Replace by vim-clap !? 2020-01-29
+"Plug 'kien/ctrlp.vim'
 
 " Colorscheme
 Plug 'morhetz/gruvbox'
 
-Plug 'w0rp/ale'
-let g:ale_completion_enabled = 1
+"" Replaced by Coc !? 2020-01-29
+"Plug 'w0rp/ale'
 
-Plug 'vim-airline/vim-airline-themes'
 Plug 'bkad/CamelCaseMotion'
 Plug 'bronson/vim-trailing-whitespace'
 
-" Auto-complete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Language Server
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_node_path = '/home/guillaume/.nvm/versions/node/v13.5.0/bin/node'
+" Installed directly using coc
+"Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 " Elm
-" Plug 'pbogut/deoplete-elm'
-Plug 'Zaptic/elm-vim'
+Plug 'andys8/vim-elm-syntax', { 'for': 'elm' }
+Plug 'majutsushi/tagbar', { 'for': 'elm' }
+
+" Scala
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 
 " Haskell
+Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
@@ -65,13 +76,13 @@ Plug 'alx741/vim-hindent', { 'for': 'haskell' }
 Plug 'hspec/hspec.vim', { 'for': 'haskell' }
 
 " Python
-Plug 'nvie/vim-flake8' " python pep8 + syntax checker
-Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'nvie/vim-flake8', { 'for': 'python' } " python pep8 + syntax checker
+Plug 'Vimjas/vim-python-pep8-indent', { 'for': 'python' }
 
 " Javascript
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'mxw/vim-jsx'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 
 call plug#end()
