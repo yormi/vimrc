@@ -4,8 +4,8 @@ nnoremap <esc> :noh<return><esc>
 
 " Ag Silver Search
 " open ag.vim
-nnoremap <leader>a :Ag 
-nnoremap <leader>A :Far -s<Left><Left><Left>
+nnoremap <leader>a :Ag <Right>
+nnoremap <leader>A :Far  * -s<Left><Left><Left><Left><Left>
 
 " Farp
 let g:far#source='ag'
