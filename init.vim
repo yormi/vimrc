@@ -36,16 +36,16 @@ Plug 'vim-airline/vim-airline-themes'
 " Search & Navigate
 Plug 'rking/ag.vim'
 Plug 'brooth/far.vim'
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'liuchengxu/vim-clap', { 'branch': 'project-root-marker', 'do': ':Clap install-binary' }
 Plug 'scrooloose/nerdtree'
 " Replace by vim-clap !? 2020-01-29
 "Plug 'kien/ctrlp.vim'
 
 " Colorscheme
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 
 "" Replaced by Coc !? 2020-01-29
-"Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 
 Plug 'bkad/CamelCaseMotion'
 Plug 'bronson/vim-trailing-whitespace'
