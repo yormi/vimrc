@@ -57,7 +57,7 @@ set formatoptions=q,r " This is a sequence of letters which describes how
                     "           the current comment leader automatically.
                     " q         Allow formatting of comments with "gq".
                     " r         Automatically insert the current comment leader
-                    "           after hitting <Enter> in Insert mode. 
+                    "           after hitting <Enter> in Insert mode.
                     " t         Auto-wrap text using textwidth (does not apply
                     "           to comments)
 
@@ -68,8 +68,10 @@ set mouse=a         " Enable the use of the mouse.
 
 " trailing space/tab
 set list
-set listchars=tab:›-,trail:۰
-
+set listchars=tab:›-,trail:۰,nbsp:☠
+syntax match ErrorMsg "­" " Soft-Hyphen
+" For further improvement on showing invisible character:
+"        https://stackoverflow.com/a/51195979
 
 " Autocomplete in Command Bar Menu
 set wildmenu

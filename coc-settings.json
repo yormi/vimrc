@@ -1,5 +1,9 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["elm", "scala"],
+    "diagnostic.messageTarget": "echo",
+
+    "coc.preferences.rootPatterns": [".root"],
+
+    "coc.preferences.formatOnSaveFiletypes": ["elm", "scala", "python"],
     "diagnostic.maxWindowHeight":12,
 
     "languageserver": {
@@ -10,7 +14,32 @@
             "initializationOptions": {
                 "elmAnalyseTrigger": "change"
             }
-        }
-    }
-    , "metals.javaHome": "/usr/lib/jvm/default"
+        },
+
+        "haskell": {
+            "command": "hie-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": [
+              "stack.yaml",
+              "cabal.config",
+              "package.yaml"
+            ],
+            "filetypes": [
+              "hs",
+              "lhs",
+              "haskell"
+            ],
+            "initializationOptions": {
+              "languageServerHaskell": {
+                "hlintOn": true
+              }
+            }
+          }
+    },
+    "metals.javaHome": "/usr/lib/jvm/default",
+
+    // Python --- Work in progress
+    "python.linting.pylintEnabled": true,
+    //"python.linting.flake8Enabled": false,
+    "python.formatting.provider": "autopep8"
 }

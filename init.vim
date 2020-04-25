@@ -45,7 +45,7 @@ Plug 'scrooloose/nerdtree'
 "Plug 'morhetz/gruvbox'
 
 "" Replaced by Coc !? 2020-01-29
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 Plug 'bkad/CamelCaseMotion'
 Plug 'bronson/vim-trailing-whitespace'
@@ -74,10 +74,6 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'alx741/vim-hindent', { 'for': 'haskell' }
 Plug 'hspec/hspec.vim', { 'for': 'haskell' }
-
-" Python
-Plug 'nvie/vim-flake8', { 'for': 'python' } " python pep8 + syntax checker
-Plug 'Vimjas/vim-python-pep8-indent', { 'for': 'python' }
 
 " Javascript
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
