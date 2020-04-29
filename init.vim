@@ -64,16 +64,18 @@ Plug 'majutsushi/tagbar', { 'for': 'elm' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 
 " Haskell
+Plug 'sdiehl/vim-ormolu', { 'for': 'haskell' }
 Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
-Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
-Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
-Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
-Plug 'alx741/vim-hindent', { 'for': 'haskell' }
-Plug 'hspec/hspec.vim', { 'for': 'haskell' }
+" Old
+"Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
+"Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
+"Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+"Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
+"Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
+"Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+"Plug 'alx741/vim-hindent', { 'for': 'haskell' }
+"Plug 'hspec/hspec.vim', { 'for': 'haskell' }
 
 " Javascript
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
