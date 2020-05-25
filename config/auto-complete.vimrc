@@ -129,21 +129,3 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "
 " " when autocomplete menu visible, ESC quit insert mode
 " inoremap <expr> <ESC> pumvisible() ? "\<ESC>\<ESC>" : "\<ESC>"
-
-
-"" ----------- ALE ------------
-" let g:ale_completion_enabled = 1
-
-
-
-"" ----------- Deoplete ------------
-
-let g:deoplete#enable_at_startup = 1
-" let g:deoplete#disable_auto_complete = 1
-
-" Close Suggestion box on InsertLeave
-" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" Disable haskell-vim omnifunc
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc

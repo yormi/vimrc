@@ -1,5 +1,5 @@
-let g:ale_linters = {'scala': ['scalac']}
-
 nmap <leader><leader>s :s/, /,\r/g<CR>
 
-nmap ,h :source ~/.vim/ftplugin/scala.vim<CR>
+nmap ,h :source ~/.config/nvim/ftplugin/scala.vim<CR>
+
+nnoremap <silent> <space>C :<C-u>CocCommand metals.compile-cancel<CR>

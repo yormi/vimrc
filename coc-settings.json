@@ -37,6 +37,7 @@
           }
     },
     "metals.javaHome": "/usr/lib/jvm/default",
+    "metals.statusBarEnabled": true,
 
     // Python --- Work in progress
     "python.linting.pylintEnabled": true,

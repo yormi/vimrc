@@ -70,4 +70,3 @@ nmap <leader>r :bp <BAR> bd #<CR>
 nmap <silent> <leader>R :NERDTreeClose<bar>bufdo bd<CR>
 
 
-nmap <leader>j :ALEDetail<CR>
