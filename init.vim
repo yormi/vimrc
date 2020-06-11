@@ -64,7 +64,7 @@ Plug 'majutsushi/tagbar', { 'for': 'elm' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 
 " Haskell
-Plug 'sdiehl/vim-ormolu', { 'for': 'haskell' }
+"Plug 'sdiehl/vim-ormolu', { 'for': 'haskell' }
 Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 " Old
