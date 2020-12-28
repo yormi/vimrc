@@ -1,5 +1,6 @@
 {
     "diagnostic.messageTarget": "echo",
+    "diagnostic.locationlist": true,
 
     "coc.preferences.rootPatterns": [".root"],
 
@@ -17,7 +18,7 @@
         },
 
         "haskell": {
-            "command": "hie-wrapper",
+            "command": "haskell-language-server-wrapper",
             "args": ["--lsp"],
             "rootPatterns": [
               "stack.yaml",

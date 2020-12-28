@@ -51,7 +51,7 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'bronson/vim-trailing-whitespace'
 
 " Language Server
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.78' }
 let g:coc_node_path = '/home/guillaume/.nvm/versions/node/v13.5.0/bin/node'
 " Installed directly using coc
 "Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}

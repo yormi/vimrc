@@ -110,8 +110,9 @@ nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Open window for Error details
+nnoremap <silent> <space>p  :call CocAction("diagnosticPreview")<CR><C-w>W
 
 
 " ------ OmniComplete
