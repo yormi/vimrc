@@ -96,8 +96,6 @@ nmap <space>r <Plug>(coc-rename)
 
 " ---- CocList ----
 
-" Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions
 nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
@@ -111,8 +109,18 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 
+
+"" DIAGNOSTICS
+
+" Update the location list with the diagnostics then close it on save
+autocmd BufWritePost * :CocDiagnostics
+autocmd BufWritePost * :lclose
+
 " Open window for Error details
 nnoremap <silent> <space>p  :call CocAction("diagnosticPreview")<CR><C-w>W
+
+" Show all diagnostics
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 
 
 " ------ OmniComplete

@@ -38,23 +38,17 @@ Plug 'rking/ag.vim'
 Plug 'brooth/far.vim'
 Plug 'liuchengxu/vim-clap', { 'branch': 'project-root-marker', 'do': ':Clap install-binary' }
 Plug 'scrooloose/nerdtree'
-" Replace by vim-clap !? 2020-01-29
-"Plug 'kien/ctrlp.vim'
 
 " Colorscheme
 "Plug 'morhetz/gruvbox'
-
-"" Replaced by Coc !? 2020-01-29
-"Plug 'w0rp/ale'
 
 Plug 'bkad/CamelCaseMotion'
 Plug 'bronson/vim-trailing-whitespace'
 
 " Language Server
-Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.78' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_node_path = '/home/guillaume/.nvm/versions/node/v13.5.0/bin/node'
-" Installed directly using coc
-"Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.78' }
 
 " Elm
 Plug 'andys8/vim-elm-syntax', { 'for': 'elm' }
@@ -64,18 +58,8 @@ Plug 'majutsushi/tagbar', { 'for': 'elm' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 
 " Haskell
-"Plug 'sdiehl/vim-ormolu', { 'for': 'haskell' }
 Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
-" Old
-"Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
-"Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
-"Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-"Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-"Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
-"Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-"Plug 'alx741/vim-hindent', { 'for': 'haskell' }
-"Plug 'hspec/hspec.vim', { 'for': 'haskell' }
 
 " Javascript
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
