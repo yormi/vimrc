@@ -122,6 +122,11 @@ nnoremap <silent> <space>p  :call CocAction("diagnosticPreview")<CR><C-w>W
 " Show all diagnostics
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 
+"" METALS
+" Problem with promisify
+" https://github.com/scalameta/coc-metals/issues/255
+let g:coc_node_path = '/home/guillaume/.nvm/versions/node/v15.11.0/bin/node'
+
 
 " ------ OmniComplete
 

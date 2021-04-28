@@ -35,7 +35,10 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Search & Navigate
 Plug 'rking/ag.vim'
-Plug 'brooth/far.vim'
+
+" Last version of far.vim was hanging
+Plug 'brooth/far.vim', { 'commit': '4888a06d42508566bc8a7c74b0220d9a7628c5f6' }
+
 Plug 'liuchengxu/vim-clap', { 'branch': 'project-root-marker', 'do': ':Clap install-binary' }
 Plug 'scrooloose/nerdtree'
 
@@ -47,12 +50,7 @@ Plug 'bronson/vim-trailing-whitespace'
 
 " Language Server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_node_path = '/home/guillaume/.nvm/versions/node/v13.5.0/bin/node'
 "Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.78' }
-
-" Elm
-Plug 'andys8/vim-elm-syntax', { 'for': 'elm' }
-Plug 'majutsushi/tagbar', { 'for': 'elm' }
 
 " Scala
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }

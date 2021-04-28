@@ -7,6 +7,8 @@
     "coc.preferences.formatOnSaveFiletypes": ["elm", "scala", "python"],
     "diagnostic.maxWindowHeight":12,
 
+    "codeLens.enable": false,
+
     "languageserver": {
         "elmLS": {
             "command": "elm-language-server",
@@ -29,12 +31,7 @@
               "hs",
               "lhs",
               "haskell"
-            ],
-            "initializationOptions": {
-              //"languageServerHaskell": {
-              //  "hlintOn": true
-              //}
-            }
+            ]
           }
     },
     "metals.javaHome": "/usr/lib/jvm/default",
